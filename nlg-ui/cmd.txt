@@ -1,0 +1,5 @@
+rsync -av --exclude=".git" --exclude="node_modules" --exclude="node_modules"  --exclude="data"  foxxx root@184.168.29.48:/root/nlg
+ssh root@184.168.29.48
+cd /root/nlg/foxxx
+docker-compose build
+docker-compose up -d

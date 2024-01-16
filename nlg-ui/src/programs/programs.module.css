@@ -1,0 +1,120 @@
+.mainContainer{
+  width: 100%;
+    position: relative;
+    height: 510px;
+    max-height: 600px;
+}
+.mainImamge{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overFlowContainer{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+.overFlowContainer h1 {
+    color: #FFFFFF;
+    font-family: avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;
+    font-size: 61.8px;
+    text-decoration: none;
+    line-height: 0.9;
+    min-height: 0vw;
+}
+
+.overFlowContainer span {
+    color: #FFFFFF;
+    font-size: 16.8px;
+    font-style: normal;
+    line-height: 1.6;
+    min-height: 0vw;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+}
+.container2heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.container2heading span{
+    font-size: 65px;
+    font-family: avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
+}
+.cardContainer{
+    width: 80%;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+.Customcard{
+    min-height: 30vh;
+}
+@media (max-width: 808px) {
+    .parentConatainer{
+        width: 100%;
+    }
+    .mainContainer {
+        width: 100%;
+
+        height: auto;
+    }
+    .mainImamge{
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+        height: 144.29px;
+    }
+    .overFlowContainer{
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        width: 80%;
+    }
+    .overFlowContainer h1 {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+    }
+    .overFlowContainer span {
+        display: none;
+        color: white;
+        font-size: 17.33px;
+        line-height: 1.6;
+        font-family:  avenir-lt-w01_35-light14;
+    }
+    .container2heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 32px;
+        
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .container2heading span{
+        font-size: 32px;
+        font-family: avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
+    }
+    .cardContainer{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+    .customCardParent{
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .Customcard{
+        min-height: 30vh;
+        
+        width: 100%;
+    }
+    .headerCard{
+        font-size: 16px!important;
+        height: 8vh!important;
+    }
+}

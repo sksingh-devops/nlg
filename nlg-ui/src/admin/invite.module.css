@@ -1,0 +1,66 @@
+.inviteParentContainer{
+    display: flex;
+    min-height: 80vh;
+}
+.inviteLeftSide{
+    background-color:#eee;
+    width: auto;
+    min-height:80vh; 
+   min-width: 30%,
+   
+}
+.mainHeading{
+    margin-bottom: 20px;
+
+}
+.inviteTable{
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tabCOntainer{
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.menuHeight{
+    height: 95%,
+         
+}
+@media (max-width: 808px) {
+    .hideonmobile {
+        display: none; 
+      }
+      .menuHeight{
+        height: 100%,
+             
+    }
+    .inviteParentContainer{
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+    }
+    .inviteLeftSide{
+        width: 100%;
+        height:50vh; 
+       
+    }
+    .mainHeading{
+        margin-top: 10px;
+        margin-bottom: 20px;
+       font-size: 25px;   
+    }
+    .inviteTable{
+   
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .tabCOntainer{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 24px;
+        display: flex;
+        /* justify-content: center; */
+        
+    }
+}

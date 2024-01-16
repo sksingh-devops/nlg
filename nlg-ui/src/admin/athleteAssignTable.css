@@ -1,0 +1,67 @@
+.assignathleteTable{
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.assignMainContainer{
+    width: 100%;
+    min-height: 70vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#eee;
+}
+.assigntestName{
+    margin-top: 10px;
+    color: #256208;
+    font-size: 30px;
+    font-weight: bold;
+}
+.assignTestNameContainer{
+ display: flex;
+ gap: 10px;
+ justify-content: center; 
+ align-items: center;     
+}
+.assign-plus-icon-player-development{
+    font-size: 32px;
+    vertical-align: baseline;
+    margin-left: 10px;
+  }
+  .assignlevelVideo{
+    object-fit: cover;
+
+    justify-content: center;
+    max-height: 280px;
+}
+.assign-athlete-button{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+  
+    justify-content: right;
+}
+@media (max-width: 768px) {
+    .assigntestName{
+        color: #256208;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .assignTestNameContainer{
+        display: flex;
+        gap: 10px;
+        justify-content: center; 
+        align-items: center;   
+    }
+    .assign-plus-icon-player-development{
+        
+        font-size: 20px!important;
+        margin-top: -10px;
+    }
+    .assignlevelVideo{
+        /* object-fit: cover; */
+        width: 90%;
+        justify-content: center;
+        max-height: 320px;
+    }
+}
