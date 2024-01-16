@@ -1,0 +1,79 @@
+scp -r foxxx root@162.241.115.73:/root/nlg
+n_*Qr7kv7p[,
+1)
+cd nlg-ui
+npm run build
+cd .. -> live 
+rsync -av --exclude=".git" --exclude="node_modules" --exclude="node_modules"  --exclude="data"  foxxx root@162.241.115.73:/root/nlg
+ssh root@162.241.115.73
+cd /root/nlg/foxxx
+docker-compose build
+docker-compose up -d
+nohup docker-compose up --build -d output.txt &
+
+local folder
+[foxxx]
+[-+ nlg-service]
+[-+ nlg-ui]
+
+
+rsync -av --exclude="uploads"  --exclude=".git" --exclude="node_modules" --exclude="node_modules"  --exclude="data"  foxxx root@184.168.29.48:/root/nlg
+ssh root@184.168.29.48
+
+Next!golf12345
+
+
+cd /root/nlg/foxxx
+docker-compose down
+docker-compose build
+docker-compose up -d
+
+
+
+mlchiong@gmail.com
+swingbylou@me.com
+
+
+Start Here
+*********** Start
+****** Local 
+in nlg-ui (cd /Users/vijay/Documents/live/foxxx/nlg-ui)
+- git pull
+- npm run build
+
+in nlg-service (cd /Users/vijay/Documents/live/foxxx/nlg-service)
+- git pull
+
+
+
+in live (cd .. if needed) (cd /Users/vijay/Documents/live)
+- rsync -av --exclude="uploads" --exclude=".git" --exclude="node_modules" --exclude="node_modules"  --exclude="data"  foxxx root@184.168.29.48:/root/nlg
+- (password) =  Next!golf12345
+
+In Remote machine
+- ssh root@184.168.29.48
+- password = Next!golf12345
+
+
+- cd /root/nlg/foxxx
+- docker-compose build && docker-compose down && docker-compose up -d
+*********** DONE
+
+
+
+
+If needed
+cd /root/nlg/foxxx
+chmod -R 777 uploads
+
+Ath==
+gopalgupta36270+16@gmail.com
+
+matty1chiong@gmail.com
+
+
+162.241.127.165
+user: root
+Pass: Kaminey123!
+
+sudo service nginx start
