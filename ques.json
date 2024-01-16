@@ -1,0 +1,52 @@
+{
+"title": "PLAYER DEVELOPMENT CHALLENGE",
+"description":"description",
+"media": {
+    "type": "pic/video",
+    "link":".../static/link"
+},
+"levels": {
+"level1":[
+    {
+        "title":"Shot 1",
+        "shotNo": 2,
+        "picture": "..",
+        "type": "text + SELECT",
+        "Score" : "",
+        "distance" :["feet", "inch"],
+        "done": "boolean" 
+
+    },
+    {
+        "title":"Shot 2",
+        "shotNo": 2,
+        "picture": "..",
+        "type": "text + SELECT",
+        "Score" : "",
+        "distance" :["feet", "inch"],
+        "done": "boolean" 
+
+    }
+]
+}
+}
+
+
+
+/*
+2 type of challenge timed and basic(practise = no time)
+
+
+-> Task Challenge Desktop View ? Scale mobile view
+-> How many times a form can be submitted (re-test ?) = Any time(track) 
+-> can someone submit for previous (attempt + 1)
+-> How to calculate leader Ranks ? time < Thresold = pass  * accuracy(score) - Attempts ?
+-> When to calculate Ranks ? real time 
+-> What admin can see - all(time attempts )
+-> what coach can see - all(time attempts )
+-> What college can see - Leardership(score) (-time -attempts )(on demand see profile like admin)
+-> what athlete 1 can see for athlete 2 => Leardership(score) (-time -attempts )
+
+-> A1 vs A2 when to include 
+(ex: A2 haven't answered any level yes is he last in Rank ? = NA)
+*/

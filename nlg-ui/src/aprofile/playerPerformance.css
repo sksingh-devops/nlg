@@ -1,0 +1,37 @@
+.card-aws-date{
+    color: green;
+    font-family: sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;}
+    .card-aws-description{
+        color: #FFF;
+        font-family: sans-serif;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    .card-aws-title{
+        margin-top: 0px;
+        color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    .performcance-cardContainer{
+        display: flex;
+        flex-grow: 1;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+  .performanceHeader  .ant-collapse-header-text{
+    color: white;
+  }
+  .performanceHeader .ant-collapse-expand-icon{
+    color: white!important;
+
+  }

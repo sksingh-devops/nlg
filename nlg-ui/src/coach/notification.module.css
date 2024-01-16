@@ -1,0 +1,86 @@
+.markAllAsReadRow {
+    background-color: #f7f7f7;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .unreadCount {
+    display: flex;
+    align-items: center;
+    color: #1976D2; /* Color for unread count and icon */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .unreadCount span {
+    margin-left: 5px;
+  }
+  
+.notificationContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .notification {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  .unread {
+    background-color: #e5f0ff;
+    border-left: 3px solid #1e90ff;
+    cursor: pointer;
+  }
+  
+  .message {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .time {
+    color: #888;
+  }
+  
+  .readIcon {
+    font-size: 18px;
+    color : lightgrey;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s; /* Add transition for icon transform and color change */
+  }
+  
+  /* Apply hover effect to both read and unread messages */
+  .notification:hover .readIcon {
+    color: #8fc072;
+    transform: scale(1.6); /* Enlarge the icon on hover */
+  }
+  
+  /* Style for read messages */
+  .notification.read {
+    border-left: 3px solid #8fc072;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  /* Additional styles for read icon */
+.notification.read .readIcon {
+    color: #42b883; /* Beautiful color for read icons */
+  }
+  .notification.unread .readIcon {
+    color: #1e90ff; /* Beautiful color for unread icons */
+  }

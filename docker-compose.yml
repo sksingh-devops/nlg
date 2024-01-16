@@ -1,0 +1,45 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    volumes:
+      - './data:/data/db'
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: nglservice  
+  nlgservice:
+    image: nlgservice
+    restart: always
+    build:
+      context: ./nlg-service/
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: nglservice
+      ME_CONFIG_MONGODB_URL: mongodb://root:nglservice@mongo:27017/
+      EMAIL: nextlevelgolf12345@gmail.com
+      PASSWORD: ktgibaqrywwayxau
+      JWT_SECRET: xxyyyzzzz
+      SERVER_IP: localhost
+    ports:
+      - 8085:8085
+    volumes:
+      - ./uploads:/usr/src/app/uploads:rw
+  nlgui:
+    image: nlgui
+    restart: always
+    build:
+      context: ./nlg-ui/
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+      API_URL: nlgservice:8085/api/
+    ports:
+      - 80:80
+      #- 443:443

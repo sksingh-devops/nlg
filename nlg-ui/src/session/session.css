@@ -1,0 +1,46 @@
+.session-card{
+    min-height: 80vh;
+}
+
+.session-card .ant-card-head{
+    border-bottom: 1px solid  rgb(37, 98, 8);
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.session-card .ant-card-bordered {
+    border: 1px solid  rgb(37, 98, 8);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.filter-class-practice .btn-gopal-active {
+    border-bottom: 5px solid green;
+
+  }
+  .filter-class-practice  .btn-dark.focus , .btn-dark:focus {
+    box-shadow: none!important;
+}
+  
+  .filter-class-practice  .btn-secondary.focus , .btn-secondary:focus {
+    box-shadow: none!important;
+}
+
+  .plus-icon-player-development{
+    font-size: 32px;
+    vertical-align: baseline;
+    margin-left: 10px;
+  }
+  @media (max-width: 768px) {
+
+    .player-development{
+        font-size: 19px!important;
+    }
+    .plus-icon-player-development{
+        font-size: 15px!important;
+    }
+  }
+  
+  body.ant-modal-open {
+    overflow: hidden;
+}

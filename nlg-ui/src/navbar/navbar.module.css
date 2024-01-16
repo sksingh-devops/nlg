@@ -1,0 +1,368 @@
+/* Default styles */
+.mainContainer {
+  display: flex
+  ;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.rightSide{
+  display: flex;
+  gap: 20px;
+}
+.container {
+  display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 122px;
+    width: 100%;
+    z-index: 998;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    zoom: 0.8;
+ 
+  }
+
+  .navbarText{
+    flex: 6;
+    align-items: center;
+  
+    gap: 40px;
+    color: #FFF;
+font-family: sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+/* line-height: normal; */
+/* border: 1px solid red; */
+ margin: 0px;
+}
+.navbarText p{
+ 
+  /* flex: 1; */
+ /* font-family: Roboto ,sans-serif; */
+  /* height:  115px; */
+
+}
+  .navbarText p:hover{
+    cursor: pointer;
+    border-bottom: 5px solid #D8E91D ;
+    color: #D8E91D;
+  }
+  .hamburger {
+    display: flex; /* Use flexbox for vertical alignment */
+  align-items: center; 
+   fill: white;
+    margin-right: 10px;
+    vertical-align: middle;
+   width: 40px;
+  }
+  
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .line {
+    border: 3px solid white;
+    margin: 8px;
+  }
+  
+  .mainsidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    
+    background-size: cover;
+    background-color: rgba(37.05, 98.81, 8.65);
+    z-index: 9999;
+   
+  }
+  .mainsidebarUpperSection{
+    
+    
+  }
+  .closeButton {
+    flex: 8;
+    cursor: pointer;
+    color: black;
+    
+    font-size:30px;
+    margin-left: 10px;
+
+  }
+
+  .sidebar {
+    
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    cursor: pointer;
+    
+  }
+  
+ .sidebar ul {
+
+    list-style: none;
+    padding: 0;
+    margin-top: 75px;
+  }
+  
+ .sidebar li {
+
+    margin-bottom: 10px;
+    color:white;
+    font-size: 20px;
+    
+   
+  }
+  .sidebar li:hover{
+    background-color: rgb(87, 198, 87);
+    color: black;
+    cursor: pointer;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  .loginButton {
+
+  background-color: black; 
+
+  border-radius: 4px;
+border: 2px solid #598B42;
+
+color: #FFF;
+font-family: sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 188px;
+height: 50px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+  }
+  
+/* .loginButton:hover {
+  background-color: #45a049;
+} */
+
+.loginButton:active {
+  background-color: #3e8e41; /* Even darker green color when the button is pressed */
+}
+.logoutButton {
+ color: white;
+display: flex;
+align-items: center; 
+  border-radius: 4px;
+/* border: 2px solid #598B42; */
+gap: 10px;
+cursor: pointer;
+font-family: sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+/* width: 188px; */
+height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  word-break: break-word;
+}
+.iconHandler{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  /* width: 188px; */
+  gap: 40px;
+  /* border: 1px solid red; */
+}
+/* .logoutButton:hover {
+background-color: #45a049; 
+} */
+
+/* .logoutButton:active {
+background-color: #3e8e41; 
+}
+   */
+  .selectedItem {
+    background-color: green;
+   
+  }
+  
+  
+  .sidebarIcon {
+    margin-right: 10px;
+  }
+  .dropdownMenu {
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+  
+  /* Menu item styles */
+  .dropdownItem {
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    font-family: Avenir-LT-W05_85-Heavy;
+  }
+  
+  .menuHover:hover {
+    background-color: green;
+    color: black;
+  }
+  .logoContainer{
+    display: flex;
+    flex: 6;
+    gap: 70px;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin: 5px; */
+    /* border: 1px solid red; */
+  }
+  .logoContainer span{
+    font-weight: bold;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    /* Your CSS styles for this range go here */
+    .mainsidebar{
+      width: 50%;
+      height: 100vh;
+    }
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust the styles for smaller screens */
+    .Downarrowicon{
+      
+      font-size: 20px;
+    }
+    .navText{
+     display: none;      
+      font-weight: bold;
+    }
+    .loginButton {
+
+      background-color: black; 
+    
+      border-radius: 4px;
+    border: 2px solid #598B42;
+    
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 120px;
+    height: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      }
+      
+      .logoutButton{
+        word-break: break-word;
+    font-size: 16px;
+   gap: 20px;
+      }
+    .mainContainer {
+      display: flex
+      ;
+      /* border : 1px solid red; */
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .logoContainer{
+      display: flex;
+      flex: 6;
+      /* gap: 120px; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      /* margin: 5px; */
+      /* border: 1px solid red; */
+    }
+    .rightSide{
+      /* margin-left: 10px; */
+      display: flex;
+      flex: 6;
+      justify-content: space-evenly;
+      /* width: 100%; */
+      /* gap: 80px; */
+      /* border: 1px solid green; */
+      
+    }
+    .container {
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+    .navbarText{
+      display: none;
+    }
+    .container1 {
+      flex-direction: row;
+    }
+    .container1 h2{
+      font-size: 20px;
+    }
+    .container1 img{
+      width: 50%;
+    }
+  
+    .line {
+      border: 3px solid white;
+      margin: 8px;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+    .sidebar ul {
+  
+      list-style: none;
+      padding: 0;
+      margin-top: 80px;
+    }
+    
+    .mainsidebar{
+      width: 100%;
+      height: 100vh;
+    }
+    .closeButton {
+      top: 10px;
+      right: 25px;
+      font-size: 40px;
+    }
+    .sidebar li{
+      font-size: 30px;
+    }
+    .sidebar li:hover{
+      background-color: rgb(87, 198, 87);
+      color: black;
+      cursor: pointer;
+    }
+    .hamburger {
+   
+      margin-right: 0px;
+      
+     width: 40px;
+    }
+  }
+  
+  /* Add more media queries as needed for different screen sizes */
+  

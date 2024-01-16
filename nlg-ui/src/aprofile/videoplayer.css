@@ -1,0 +1,40 @@
+/* Custom CSS for Video Player Component */
+
+/* Style for the video selector */
+.video-selector {
+    max-height: 500px; /* Set a maximum height for the selector with scrolling */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the max height */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .video-thumbnail {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .video-thumbnail:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .video-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for the selected video */
+  .selected-video {
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    background-color: #f9f9f9; */
+  }
+  
+  /* Center the video horizontally */
+  .selected-video video {
+    display: block;
+    margin: 0 auto;
+  }
+  

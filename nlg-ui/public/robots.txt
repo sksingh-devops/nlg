@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /private/  # This blocks a specific directory (e.g., for admin or private content)
+Disallow: /secrets/  # You can add additional disallowed directories
+Disallow: /restricted-page.html  # Block a specific page
+Allow: /  # Allow all other pages to be crawled
+
+User-agent: Googlebot  # Custom rules for Googlebot
+Disallow:
+Allow: /public/  # Allow Googlebot to crawl the public directory
+
+User-agent: Bingbot  # Custom rules for Bingbot
+Disallow:
+Allow: /public/  # Allow Bingbot to crawl the public directory
